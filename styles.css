@@ -1,8 +1,9 @@
 body{
     max-width: 1200px;
     min-width: 900px;
-    background: rgb(55,255,253);
-background: linear-gradient(180deg, rgba(55,255,253,0.7455575980392157) 0%, rgba(12,99,96,0.21894695378151263) 100%);
+    background-image: url(images/portal_background.jpg);
+    background-repeat: no-repeat;
+    margin-top:0;
 }
 
 
@@ -25,6 +26,45 @@ header{
     margin-left: 20px;
 }
 
+#orange1{
+    position: absolute;
+    right:30%;
+    top:7%;
+    animation: rotation 2s infinite;
+}
+
+
+
+#orange2{
+    position:absolute;
+    left:10%;
+    top:24%;
+
+    animation: rotation 4s infinite;
+}
+
+
+#orange3{
+    position: absolute;
+    right:50%;
+    top:5%;
+    animation: rotation 3s infinite;
+}
+
+#orange4{
+    position:absolute;
+    right:40%;
+    top:23%;
+    animation: rotation 3s infinite;
+}
+
+#orange5{
+    position: absolute;
+    left:30%;
+    top:24%;
+    animation: rotation 2s infinite;
+}
+
 h1{
     font-size:48px;
     font-weight: 700;
@@ -38,7 +78,11 @@ header h2{
 main{
     display: flex;
     justify-content: space-around;
-    margin:5% 8%;
+    margin-left:180px;
+    margin-top:5%;
+    margin-right:30px;;
+    margin-bottom:20px;
+
 }
 
 
@@ -46,9 +90,9 @@ article{
     display: block;
     background-color: #FFEBD8;
     text-align: center;
-    width:150px;
+    width:200px;
     border-radius:30px;
-    padding: 50px 30px;
+    padding: 10px 30px;
     border: 1px solid #000000;
     box-shadow: 0 1px 3px #000000;
     font-family: 'Play', sans-serif;
@@ -60,16 +104,62 @@ article ul {
 }
 
 article ul a{
+    display: block;
+    background-color: #FFF8F2;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 30px;
     text-decoration: none;
     color:black;
-    line-height: 1.6em;
+    font-family:'Play', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid #FF912B;
+}
+
+article ul a:hover{
+    background-color: #FF912B;
+    color:#ffffff;
+    border: 1px solid #FFF8F2;
+
 }
 
 footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background-color: #73CC49;
-    padding:10px 0;
+    padding:5px 0;
     border-top-right-radius: 30% 50%;
     border-top-left-radius: 20% 30%;
     text-align: center;
     border: 1px #000000 solid;
+    text-decoration: none;
+    font-size: 18px;
+    color:#000000;
+    font-family: 'Play', sans-serif;
 }
+
+footer p{
+    margin-left:10px;
+    font-style: italic;
+}
+
+footer a{
+    color: #000000;
+    font-style: italic;
+    margin-left:5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  
+  }
