@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation - Functions and DOM</title>
+</head>
+<body>
+    <h1>Experimentation 2</h1>
+
+    <script>
+
+        color = prompt('enter a color of the rainbow in lowercase');
+
+        function background (color){
+            var bdy = document.querySelector('body');
+
+            if (color === 'red'){
+                bdy.style.backgroundColor= "red";
+            }
+
+            else if (color === 'orange'){
+                bdy.style.backgroundColor = 'orange';
+            }
+
+            else if (color === 'yellow'){
+                bdy.style.backgroundColor = "yellow";
+            }
+
+            else if (color === "green"){
+                bdy.style.backgroundColor = 'green';
+            }
+
+            else if (color === "blue"){
+                bdy.style.backgroundColor = "blue";
+            }
+
+            else if (color === "violet" || color === "purple"){
+                bdy.style.backgroundColor = "violet";
+             } 
+             
+             else{
+                alert("you did not enter a color of the rainbow and/or all in lowercase!")
+            }
+                
+            }
+
+        background(color);
+
+    </script>
+</body>
+</html>
