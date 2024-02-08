@@ -53,7 +53,7 @@ article a {
     color: blue;
 }
 
-#button{
+.button{
     display:inline-block;
     text-align: right;
     color:black;
