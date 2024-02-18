@@ -113,3 +113,18 @@ article a {
     width: 150px;
     height: 150px;
 }
+
+#piplup{
+    width: 200px;
+    height: 200px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption{
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Play', sans-serif;
+    font-size: 12px;
+}
