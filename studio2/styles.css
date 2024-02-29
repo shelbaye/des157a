@@ -1,0 +1,298 @@
+
+.hidden{
+    display:none;
+}
+
+.visible{
+    visibility: visible;
+}
+
+body{
+    background-color: #2F2F2F;
+    width: 100%;
+}
+
+p{
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    line-height: 1.6em;
+}
+
+h2{
+    color:white;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h1{
+    color:white;
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+#pp{
+    width: 100px;
+    height:100px;
+}
+
+#user{
+    display:flex;
+}
+
+#user img{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#user p{
+    margin:auto;
+    margin-left: 20px;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+header p{
+    margin:auto;
+    margin-right: 10px;
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 20px;
+    
+}
+
+
+#previews{
+    width:100%;
+    overflow-x: auto;
+    display:flex;
+    white-space: nowrap;
+}
+
+#previews img{
+    margin: 70px;
+    border: solid 1px black;
+    height: 300px;
+    width: 300px;
+}
+
+#piplupCard{
+    cursor: pointer;
+}
+
+#piplupCard:hover{
+    border-color: rgb(37, 168, 225);
+    border-width: 3px;
+}
+
+#dragonCard{
+    cursor:pointer;
+}
+
+#dragonCard:hover{
+    border-color: rgb(37, 168, 225);
+    border-width: 3px;
+}
+
+#helloKittyCard{
+    cursor: pointer;
+}
+
+#helloKittyCard:hover{
+    border-color: rgb(37, 168, 225);
+    border-width: 3px;
+}
+
+#hironoCard{
+    cursor:pointer;
+}
+
+#hironoCard:hover{
+    border-color: rgb(37, 168, 225);
+    border-width: 3px;
+}
+
+#pochacoCard{
+    cursor: pointer;
+}
+
+#pochacoCard:hover{
+    border-color: rgb(37, 168, 225);
+    border-width: 3px;
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#navigation img{
+    cursor: pointer;
+}
+
+.close{
+    cursor:pointer;
+}
+
+#pressedLeft, #pressedRight{
+    display: none;
+}
+
+#piplupGame{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#piplupGame article{
+    box-sizing: border-box;
+    background-color: rgba(12,12,12.81);
+    padding: 30px;
+    width: 45vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#piplupGame h2{
+    color: #688EEF;
+}
+
+#dragonGame{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#dragonGame article{
+    box-sizing: border-box;
+    background-color: rgba(12,12,12.81);
+    padding: 30px;
+    width: 45vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#dragonGame h2{
+    color: rgb(26, 130, 43)
+}
+
+#hellokittyGame{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#hellokittyGame article{
+    box-sizing: border-box;
+    background-color: rgba(12,12,12.81);
+    padding: 30px;
+    width: 45vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hellokittyGame h2{
+    color: rgb(7, 133, 32);
+}
+
+#hironoGame{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#hironoGame article{
+    box-sizing: border-box;
+    background-color: rgba(12,12,12.81);
+    padding: 30px;
+    width: 45vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hironoGame h2{
+    color: rgb(101, 67, 16);
+}
+
+#pochacoGame {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#pochacoGame article{
+    box-sizing: border-box;
+    background-color: rgba(12,12,12.81);
+    padding: 30px;
+    width: 45vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pochacoGame h2{
+    color: rgb(30, 79, 185)
+}
+
+.description{
+    display:flex;
+}
+
+.description p{
+    margin:auto;
+    padding: 10px;
+}
+
+.close{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
