@@ -13,7 +13,7 @@
     const rulesClose = document.querySelector('#rules button');
 
     const gameData = {
-        dice: ['images/1die.jpg', 'images/2die.jpg', 'images/3die.jpg', 'images/4die.jpg', 'images/5die.jpg', 'images/6die.jpg'],
+        dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 'images/4die.png', 'images/5die.png', 'images/6die.png'],
         players: ['Monkey', 'Penguin'],
         score: [0, 0],
         roll1: 0,
@@ -52,7 +52,7 @@
     });
 
     function setUpTurn() {
-        game.innerHTML = `<p>${gameData.players[gameData.index]}'s turn!</p>`;
+        game.innerHTML = `<h2>${gameData.players[gameData.index]}'s turn!</h2>`;
         actionArea.innerHTML = '<button id="roll">Attack</button>';
         document.getElementById('roll').addEventListener('click', throwDice);
     }
@@ -61,7 +61,7 @@
         actionArea.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
-        game.innerHTML = `<p>${gameData.players[gameData.index]}'s turn!</p>`;
+        game.innerHTML = `<h2>${gameData.players[gameData.index]}'s turn!</h2>`;
         game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"><img src="${gameData.dice[gameData.roll2-1]}">`
         gameData.rollSum = gameData.roll1 + gameData.roll2;
         
@@ -75,7 +75,7 @@
         else if (gameData.roll1 === 1 || gameData.roll2 === 1){
             //console.log("one of the two dice was a 1");
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            game.innerHTML += `<p>Single attack, your oppnonent blocked it :(${gameData.players[gameData.index]}</p>`;
+            game.innerHTML += `<p>Blocked! Switching to ${gameData.players[gameData.index]}</p>`;
             setTimeout(setUpTurn, 2000);
         } 
         else {
@@ -107,12 +107,12 @@
         }
         else {
             // show current score
-            score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> and <strong>${gameData.players[1]} ${gameData.score[1]}</strong></p>`;
+            score.innerHTML = `<p><strong>${gameData.players[0]}</strong> has <strong> ${gameData.score[0]}</strong>/30 points <strong>${gameData.players[1]} </strong> has <strong>${gameData.score[1]}</strong>/30 points</p>`;
         }
     }
 
     function showCurrentScore(){
-        score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> and <strong>${gameData.players[1]} ${gameData.score[1]}</strong></p>`
+        score.innerHTML = `<p><strong>${gameData.players[0]}</strong> has <strong> ${gameData.score[0]}</strong>/30 points <strong>${gameData.players[1]}</strong> has <strong> ${gameData.score[1]}</strong>/30 points</p>`
     }
 
 })();

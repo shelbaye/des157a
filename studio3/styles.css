@@ -3,10 +3,20 @@ body {
     color: #333;
     padding: 50px;
     line-height: 1.5em;
+    background-color: lightblue;
 }
 
 .hidden{
     display:none;
+}
+
+button{
+    cursor:pointer;
+}
+
+h1{
+    color:pink;
+    font-size: 75px;
 }
 
 #rules{
@@ -16,6 +26,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
+    text-align: center;
 }
 
 #rules article{
@@ -28,37 +39,160 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 5px solid pink;
+}
+
+.close{
+    border: 3px solid #1559a6;
+    color: #1559a6;
+    background-color:#ae9745;
+    padding: 10px;
+    
+}
+
+#rules button{
+    display:block;
+    margin:auto;
 }
 
 button { 
     padding: 10px;
 }
 
-div {
-    padding: 20px;
-}
-
-#gamecontrol, #score {
-    background-color: aliceblue;
-}
-
 #gamecontrol{
     text-align: center;
 }
 
-#game {
-    background-color:#eaeaea;
-}
-#actions {
-    background-color: silver;
+#gamnecontrol img{
+    text-align: center;
 }
 
-footer{
+#game {
+    display:flex;
+    justify-content: center;
+
+}
+
+#game p{
+    margin-left: 10px;
+    margin-top: auto;
+
+}
+
+#game h2{
+    text-decoration: underline;
+}
+
+
+
+#game img{
+    height: 100px;
+    width: 100px;
+    display:flex;
+}
+#actions {
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+#actions button{
+    margin: 10px 0;
+}
+
+header{
     text-align: center;
     padding: 20px;
-    background-color: #8591B0;
+    font-family: "Press Start 2P", system-ui;
+}
+
+header h1{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 #gameplay{
     display:flex;
+    justify-content: space-around;
+}
+
+p{
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+}
+
+button{
+    font-family: "Press Start 2P", system-ui;
+}
+
+#game p{
+    font-size: 30px;
+}
+
+#how{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 3px solid #923eff;
+    color: #923eff;
+    background-color:#e5e5e5;
+}
+
+#quit{
+    position: absolute;
+    top:10px;
+    right:10px;
+    border: 3px solid #e65757;
+    color: #e65757;
+    background-color:#fff4a5;
+    padding: 10px;
+    
+
+}
+
+#roll{
+    border: 5px solid #0B6B0A;
+    color: #0B6B0A;
+    background-color:#B4FF86;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+#rollagain{
+    border: 5px solid #0B6B0A;
+    color: #0B6B0A;
+    background-color:#B4FF86;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#pass{
+    border: 5px solid #A00A0A;
+    color:#A00A0A;
+    background-color: #FFB2B2;
+    padding: 20px;
+    font-size: 30px;
+}
+
+h2{
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+}
+
+#game p{
+    font-size: 10px;
+}
+
+#startgame{
+    border: 5px solid #1559a6;
+    background-color: #ae9745;
+    color:#1559a6;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+strong{
+    color:#FE00D5;
 }
