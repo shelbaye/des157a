@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+    <title>DES 157b Final Project</title>
+</head>
+<body>
+    <header>
+        <div id="user">
+            <img id="pp" src="images/portal_image.jpg" alt="profile pic">
+            <p>shelbo</p>
+        </div>
+
+        <p>3:33 AM</p>
+    </header>
+
+    <section id="profile" class="hidden" class="overlay">
+        <article class="describe">
+            <h2>Welcome!</h2>
+            <div class="description">
+                <img id="me" src="images/me.jpg" alt="me">
+                <p>Hello!!!Feel free to explore my final project! Click on each icon to walk through a "game" of my beloved figurines!</p>
+                <img class="close" src="images/close.png" alt="close button">
+            </div>
+        </article>
+    </section>
+
+    <main>
+
+        <section id="games">
+            <div id="previews">
+                <img id="piplupCard" src="images/piplup.png" alt="pixel piplup">
+                <img id="dragonCard" src = "images/dragon.png" alt="pixel dragon">
+                <img id="helloKittyCard" src = "images/hellokittyGundam.png" alt="pixel hello kitty">
+                <img id="hironoCard" src="images/hirono.png" alt="hirono pixel">
+                <img id="pochacoCard" src="images/pochacoPixel.png" alt="pochaco pixel">
+            </div>
+
+        </section>
+
+        <!--For the Piplup Game-->
+
+            <section id="piplupGame" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Crossy Bird</h2>
+                    <div class="description">
+                        <img src="images/piplupReal.png" alt="piplup figurine">
+                        <p>Poor Piplup is lost in the cold and needs help finding his way back to his trainer. Play as Piplup as you hop on ice bergs and avoid obstacles to get him back home!</p>
+                    </div>
+                    <button class="play">play!</button>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="piplup1" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Level 1</h2>
+                    <div class="description">
+                        <img src="images/iceberg.png" alt="iceberg">
+                        <p>Navigate your way through the icy waters by jumping on ice bergs until you reach the shore!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="piplup2" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Level 2</h2>
+                    <div class="description">
+                        <img src="images/wave.png" alt="wave">
+                        <p>Oh no! Before reaching the shore, the waves on the beach started to get treacherous. Play as Piplup to help him swim to safety in these violent waters!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="piplup3" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Level 3</h2>
+                    <div class="description">
+                        <img src="images/mountain.png" alt="icy mountain">
+                        <p>Piplup must navigate the icy mountains and find his trainer where he last saw her! Use Piplup’s attacks to defend against other wild pokemon until he gets reunited with his trainer!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Receive Prize!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="piplupWin" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>You win!</h2>
+                    <img src="images/piplupTrophy.png">
+                    <p>Piplup found his trainer!</p>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <!--For the Dragon Game-->
+
+            <section id="dragonGame" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>How to Raise Your Dragon</h2>
+                    <div class="description">
+                        <img src="images/dragonReal.png" alt="dragon figurine">
+                        <p>Please take care of this newborn Dimoo Dragon :( In this cute game that is a mix of Animal Crossing and Nintendogs, help raise the Dimoo Dragon as it tries to survive in the Dimoo Kingdom.</p>
+                    </div>
+                    <button class="play">play!</button>
+                <img class="close" src="images/close.png" alt="close button">
+            </article>
+            </section>
+
+            <section id="dragon1" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Level 1</h2>
+                    <div class="description">
+                        <img src="images/egg.png" alt="egg">
+                        <p>Choose an area to hatch the egg! Choose the jungle, mountains, or the beach!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="dragon2" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Level 2</h2>
+                    <div class="description">
+                        <img src="images/chicken.png" alt="chicken">
+                        <p>Explore the Dimoo Kingdom and gather food to raise your baby dragon. Find supplies too in order to build a little house for it too!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="dragon3" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Level 3</h2>
+                    <div class="description">
+                        <img src="images/blueDimoo.png" alt="blue dimoo">
+                        <p>Your baby Dimoo is old enough to make friends! Take it to the city and meet the many interesting characters of the Dimoo Kingdom!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Receive Prize!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="dragonWin" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>You win!</h2>
+                    <img src="images/dragonTrophy.png">
+                    <p>Congratulations! Your baby dragon has adjusted to the Dimoo Kingdom!!</p>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <!--For the hellokitty Game-->
+
+            <section id="hellokittyGame" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Hello Kitty, Goodbye Monsters</h2>
+                    <div class="description">
+                        <img src="images/hellokittyReal.png" alt="hello kitty figurine">
+                        <p>Hello Kitty needs your help fending off ugly monsters who are trying to invade her pretty world. Play as a  Hello Kitty Gundman in this first-person shooter!</p>
+                    </div>
+                        <button class="play">play!</button>
+                <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="hellokitty1" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Wave 1</h2>
+                    <div class="description">
+                        <img src="images/sword.png" alt="sword">
+                        <p>Use Hello Kitty’s sword to combat this wave of tiny ugly gremlins!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="hellokitty2" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Wavel 2</h2>
+                    <div class="description">
+                        <img src="images/gun.png" alt="gun">
+                        <p>Use Hello Kitty’s gun to combat this more extreme wave of stronger, uglier monsters!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="hellokitty3" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Final Boss</h2>
+                    <div class="description">
+                        <img src="images/bazooka.png" alt="bazooka">
+                        <p>Use Hello Kitty’s bazooka to defeat the biggest, ugliest monster of them all!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Receive Prize!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="hellokittyWin" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>You win!</h2>
+                    <img src="images/hellokittyTrophy.png">
+                    <p>You defeated all the ugly monsters!</p>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <!--For the hirono Game-->
+
+            <section id="hironoGame" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Build Your Own Bot</h2>
+                    <div class="description">
+                        <img src="images/hironoReal.png" alt="hirono figurine">
+                        <p>Create your own Hirono robot with mutliple attatchments and skills to choose from in this simple customization game. Give your creation its own powers, style, and personality. Share your bot with the world!</p>
+                    </div>
+                        <button class="play">play!</button>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="hirono1" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Choose a Personality</h2>
+                    <div class="description">
+                        <img src="images/grumpy.png" alt="grumpy face">
+                        <div id="hironoList">
+                            <p>Goofy</p>
+                            <p>Grumpy</p>
+                            <p>Lazy</p>
+                            <p>Shy</p>
+                        </div>
+                    </div>
+                    <div id="levels">
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="hirono2" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Choose a Power</h2>
+                    <div class="description">
+                        <img src="images/electric.png" alt="electric">
+                        <div id="hironoList">
+                            <p>Strength</p>
+                            <p>Fire</p>
+                            <p>Speed</p>
+                            <p>Electricity</p>
+                        </div>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="hirono3" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Choose a Signature Look</h2>
+                    <div class="description">
+                        <img src="images/tvHirono.png" alt="TV Hirono">
+                        <div id="hironoList">
+                            <p>Cardboard Box</p>
+                            <p>Tv Head</p>
+                            <p>Elephant Nose</p>
+                            <p>Sandcastle Head</p>
+                        </div>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Receive Prize!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="hironoWin" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Congratulations!</h2>
+                    <img src="images/hironoTrophy.png">
+                    <p>You created a cute, powerful Hirono!</p>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <!--For the pochaco Game-->
+
+            <section id="pochacoGame" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Pochaco's First Year at Davis</h2>
+                    <div class="description">
+                        <img src="images/pochacoReal.png" alt="pochaco figurine">
+                        <p>Help Pochaco navigate his first year of college in this slice of life RPG. Level up his academic skills, popularity rank, and embark on fun missions to ensure the best introduction to Davis ever! </p>
+                    </div>
+                    <button class="play">play!</button>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="pochaco1" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Mission 1</h2>
+                    <div class="description">
+                        <img src="images/pencil.png" alt="pencil">
+                        <p>It’s Pochaco’s first finals week! Make sure he studies for his finals but also takes care of himself during this hectic, stressful time.</p>
+                    </div>
+                    <div id="levels">
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="pochaco2" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Wavel 2</h2>
+                    <div class="description">
+                        <img src="images/purin.png" alt="purin">
+                        <p>Help Pochaco find a good group of friends! Navigate his classes, join clubs, and explore different areas of campus to meet new peers.</p>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Next Level!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="pochaco3" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Wavel 2</h2>
+                    <div class="description">
+                        <img src="images/soju.png" alt="soju">
+                        <p>It’s Pochaco’s first college party! Make sure he stays safe but also has fun at the same time. Avoid embarrassing himself while also avoiding being a shy wallflower!</p>
+                    </div>
+                    <div id="levels">
+                        <button class="previous">Replay Last Level</button>
+                        <button class="next">Receive Prize!</button>
+                    </div>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+            <section id="pochacoWin" class="hidden" class="overlay">
+                <article class="describe">
+                    <h2>Congratulations!</h2>
+                    <img src="images/pochacoTrophy.png">
+                    <p>Pochaco was able to have an amazing first quarter in Davis (socially and academically)!</p>
+                    <img class="close" src="images/close.png" alt="close button">
+                </article>
+            </section>
+
+
+            <!--For the navigation-->
+        <section id="navigation">
+            <img src="images/arrowLeft.png" alt="left arrow">
+            <h1>Shelbo's Figurine Game Library</h1>
+            <img src="images/arrowRight.png" alt="right arrow">
+        </section>
+        
+        <section id="hovered" class="hidden">
+            <img src="images/pressedLeft.png" alt="pressed left arrow">
+            <img src="images/pressRight.png" alt="pressed right arrow">
+        </section>
+    </main>
+</body>
+</html>
