@@ -240,7 +240,7 @@ p{
 
 
 
-#hironoList{
+.hironoList{
     display: flex;
     flex-direction: column;
 }
@@ -254,7 +254,7 @@ button{
     border: 3px solid yellow;
     color: black;
     background-color:#fff690;
-    font-weight: 400px;
+    font-weight: 400;
     padding: 20px;
 }
 
@@ -262,7 +262,7 @@ button{
     text-decoration: underline;
 }
 
-#levels{
+.levels{
     margin-top: 50px;
     display:flex;
     justify-content: space-around;
@@ -397,7 +397,7 @@ button{
     border: 3px solid yellow;
     color: black;
     background-color:#fff690;
-    font-weight: 400px;
+    font-weight: 400;
     padding: 25px;
 }
 
