@@ -1,13 +1,12 @@
 body{
-    width: 1200px;
-    height: 750px;
-    background-image: url(images/portal_background.jpg);
-    background-repeat: no-repeat;
+    background: rgb(110,255,247);
+    background: linear-gradient(180deg, rgba(110,255,247,0.6615239845938375) 0%, rgba(110,195,234,1) 100%);
     margin-top:0;
 }
 
 
 #banner{
+    z-index: 0;
     width: 1100px;
     height:250px;
     background-color:#1B7505;
@@ -26,42 +25,53 @@ header{
     margin-left: 20px;
 }
 
-#orange1{
+#trunk{
     position: absolute;
-    right:30%;
-    top:7%;
+    top: 20%;
+    left: 0;
+    height: 100%;
+    width: 8%;
+    z-index: -1;
+    background-color: rgb(97, 74, 38);
+    border:1.5px #000000 solid;
+}
+
+
+#orange1{
+    position: relative;
+    bottom: 70%;
+    left: 35%;
     animation: rotation 2s infinite;
 }
 
 
 
 #orange2{
-    position:absolute;
-    left:10%;
-    top:24%;
-
+    position: relative;
+    bottom: 65%;
+    left: 53%;
     animation: rotation 4s infinite;
 }
 
 
 #orange3{
-    position: absolute;
-    right:50%;
-    top:5%;
+    position: relative;
+    bottom: 50%;
+    left: 75%;
     animation: rotation 3s infinite;
 }
 
 #orange4{
-    position:absolute;
-    right:40%;
-    top:23%;
+    position: relative;
+    bottom: 10%;
+    left: -10%;
     animation: rotation 3s infinite;
 }
 
 #orange5{
-    position: absolute;
-    left:30%;
-    top:24%;
+    position: relative;
+    bottom: 11%;
+    left: 45%;
     animation: rotation 2s infinite;
 }
 
@@ -125,6 +135,7 @@ article ul a:hover{
 }
 
 footer{
+    z-index: 1;
     display:flex;
     justify-content: center;
     align-items: center;
